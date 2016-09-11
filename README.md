@@ -74,8 +74,8 @@ StatusCode | Description
 6          | 此录音被加入到列表中
 7          | 此录音在播放中被暂停
 
-###Post Interface
-所有应用场景必须实现它，上传成功后便会调用它发送im消息，每个场景自定义自己的逻辑
+###Post Interface  
+所有应用场景必须实现它，上传成功后便会调用它发送im消息，每个场景自定义自己的逻辑 
 
 ###Executor Interface
 此接口是处理自动续传逻辑，即上传失败后，后台保持队列继续上传直到成功，默认实现为HttpExecutor,可以实现`Executor Interface`自定义自己的自动续传逻辑. 
