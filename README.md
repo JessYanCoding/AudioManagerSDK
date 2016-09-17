@@ -74,7 +74,7 @@ StatusCode | Description
 6          | 此录音被加入到列表中
 7          | 此录音在播放中被暂停
 
-###Post Interface  
+###Post Interface   
 所有应用场景必须实现它，上传成功后便会调用它发送im消息，每个场景自定义自己的逻辑 
 
 ###Executor Interface
