@@ -11,7 +11,7 @@
 ###构建`AudioManager `需要传入的参数 
  * 必要参数
   * **Context**: 上下文
-  * **HttpHelper**: 用于上传下载录音的接口，每个应用场景必须自己实现
+  * **HttpHelper**: 用于上传下载录音的接口，每个应用场景必须自己实现 
  * 非必要参数
   * **MaxRecordTime**: 单次录音最大录制时间，超时会在AudioListener中回调
   * **MinRecordTime**: 单次录音最小录音时间，超时会在AudioListener中回调
