@@ -14,7 +14,7 @@
   * **HttpHelper**: 用于上传下载录音的接口，每个应用场景必须自己实现 
  * 非必要参数
   * **MaxRecordTime**: 单次录音最大录制时间，超时会在AudioListener中回调
-  * **MinRecordTime**: 单次录音最小录音时间，超时会在AudioListener中回调
+  * **MinRecordTime**: 单次录音最小录音时间，超时会在AudioListener中回调 
   * **AudioListener**: 录音时的一些信息回调(与MaxRecordTime和MinRecordTime有关)
   * **StatusListener**: 对于录音信息的一些状态回调(录音上传中，播放中，下载失败...)
 
