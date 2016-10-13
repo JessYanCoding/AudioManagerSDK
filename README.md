@@ -80,7 +80,7 @@ StatusCode | Description
 ###Executor Interface
 此接口是处理自动续传逻辑，即上传失败后，后台保持队列继续上传直到成功，默认实现为HttpExecutor,可以实现`Executor Interface`自定义自己的自动续传逻辑.   
 
-###HttpHelper Interface
+###HttpHelper Interface 
 此接口是上传下载录音的接口，没有默认实现，如果要想上传下载录音必须，自己实现，原因上面已经提及 
 
 ###Audio Interface 
