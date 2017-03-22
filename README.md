@@ -31,7 +31,7 @@
  * **stopPlay**: 停止播放所有录音
  * **release**: 释放资源
 
-###示例代码
+### 示例代码
     
     mAudioManager = AudioManager
                 .builder()
@@ -74,14 +74,14 @@ StatusCode | Description
 6          | 此录音被加入到列表中
 7          | 此录音在播放中被暂停
 
-###Post Interface   
+### Post Interface   
 所有应用场景必须实现它，上传成功后便会调用它发送im消息，每个场景自定义自己的逻辑   
 
-###Executor Interface
+### Executor Interface
 此接口是处理自动续传逻辑，即上传失败后，后台保持队列继续上传直到成功，默认实现为HttpExecutor,可以实现`Executor Interface`自定义自己的自动续传逻辑.   
 
-###HttpHelper Interface 
+### HttpHelper Interface 
 此接口是上传下载录音的接口，没有默认实现，如果要想上传下载录音必须，自己实现，原因上面已经提及 
 
-###Audio Interface 
+### Audio Interface 
 `AudioManager`就实现于此接口，如果你觉得此录音管理类写的太渣了，你完全可以实现此接口重新写相关的逻辑，完全不用改之前的所有代码，此**SDK**大量使用接口处理扩展和低耦合，后面的场景应该是用此开发模式  
