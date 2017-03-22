@@ -1,14 +1,14 @@
-#AudioManager SDK
+# AudioManager SDK
 ## Introduction
  `AudioManager`专注于录音相关逻辑的处理，目前举手发言场景和点名发言场景已经使用`AudioManager`，后续有其他场景要使用到录音相关功能都应使用此类
-##Dev tips
+## Dev tips
 * `AudioManager`独立于举手发言场景，它不与举手发言场景耦合，唯一与举手场景耦合的地方时录音结束后发送消息给主播，每个场景发送的逻辑不一样，所以采用接口的方式(post interface)，让调用者实现，此场景下由`RaiseManager`实现.
 
 * 因为录音相关逻辑涉及到上传和下载的功能，`AudioManager`专注于录音处理，由于网络框架每个项目都有自己独有的一套，且庞大，所以调用者通过`HttpHelper`接口，自己实现上传下载的功能,这样保证了扩展又保证了**SDK**的大小.
 * `AudioInfo`表示录音的消息，里面封装有基本的信息，为了扩展，`AudioManager`可以传入一个继承于`AudioInfo`的范型，这样就可以在回调中收到自己定义的录音消息对象，可以储存一些自己定义的信息. 
 
 ## 参数及方法介绍:
-###构建`AudioManager `需要传入的参数  
+### 构建`AudioManager `需要传入的参数  
  * 必要参数
   * **Context**: 上下文
   * **HttpHelper**: 用于上传下载录音的接口，每个应用场景必须自己实现 
