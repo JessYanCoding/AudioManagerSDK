@@ -32,7 +32,7 @@
  * **release**: 释放资源
 
 ### 示例代码
-    
+``` java    
     mAudioManager = AudioManager
                 .builder()
                 .httpHelper(new OkHttpHelper(getActivity()))
@@ -41,6 +41,7 @@
                 .addAudioListener(AudioListener)
                 .addStatusListener(StatusListener)
                 .build();
+```
 
 ## 详解
 ### AudioInfo structure  
