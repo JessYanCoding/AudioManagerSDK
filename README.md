@@ -44,7 +44,7 @@
 ```
 
 ## 详解
-### AudioInfo structure 
+### AudioInfo structure  
 
 Field       | Description
 :----------:|:-------------:
